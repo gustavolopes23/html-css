@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reproduzindo Videos</title>
+</head>
+<body>
+    <h1>Vamos aprender a reproduzir videos em HTML.5</h1>
+    <h2>Inserindo videos hospedados localmente.</h2>
+    <p>Para adicionar um video ao seu site ultilizamos a tag &lt;video&gt; com os atributos <abbr title="vai indicar a largura que o video vai ter na tela.(Ex.:600px)"> WIDTH</abbr>, <abbr title="caonfigura uma imagem que vai aparecer como uma capa enquanto o usuario nao aperta o play.">POSTER</abbr> , <abbr title="inicia a reproduçao automatica assim que a pagina for carregada">AUTOPLAY</abbr>  e <abbr title="apresenta um player na tela">CONTROLS</abbr> , e abaixo a tag &lt;source&gt; com o atributo TYPE para indicar o formato do audio. </p></p>
+    <video width="300" poster="Imagens/foto-p.png" controls autoplay>
+        <source src="videos/video-teste-01.mp4" type="video/mp4">
+        <source src="videos/video-teste-01.m4v" type="video/m4v">
+        <source src="videos/video-teste-01.ogv" type="video/ogv">
+        <p>Seu navegado nao tem compatibilidade com reproducao de video.</p>
+
+    </video>
+    <p>Inserir videos hospedado localmente pode pesar muito seu site, dependendo do tamanho do video seja melhor hospedar externamente um video do youtube ou do vimeo.</p>
+    <br>
+    <h2>Hospedando videos em hospedagem externa.</h2>
+    <p>Para hospedar videos de forma externa basta escolhe o video do youtube ou vimeo clicar em <strong>compartilha&gt;incorporar</strong> e o codigo ja vai estar pronto.</p>
+    <h3>Ex.: YouTube</h3>
+    <iframe width="300" height="315" src="https://www.youtube.com/embed/OzUnqQk4eOg?si=-FNkmUF2_xqXucPU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <h3>Ex.: Vimeo</h3>
+    <iframe src="https://player.vimeo.com/video/51821954?h=9027ddbcdd&color=ff0179&title=0&portrait=0" width="300" height="169" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+
+
+
+    <hr>
+    <a href="pag002.html" rel="prev">Voltar a pagina anterior</a> 
+    <br>
+    <a href="index.html">Voltar para pagina inicial</a>
+    
+</body>
+</html>

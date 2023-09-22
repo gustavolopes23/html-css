@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+</head>
+<body>
+    <h1>Trabalhando com Links</h1>
+    <h2>Usando links externos</h2>
+    <p>Para adicionar link externos para um site usamos a tag A e colocamos a URL no atributo HREF</p>
+    <p>Voce pode acessar o meu <a href="https://gustavoguanabara.github.io">repositorio publico no GitHub</a></p>
+    <p>Usando apenas a ta A, ao clicar no link o usuario sera redirecionado para outra pagina e a pagina inicial sera fechada, para abrir uma pagina manterndo a pagina inicial aberta usamos o atributo TARGET="". Esse atributo possui varios valores, sendo eles: </p>
+    <ul type="square">
+        <li><a href="https://www.youtube.com/" target="_blank">_blank</a> vai abrir o link em uma nova janela em branco.</li>
+        <li><a href="https://www.youtube.com/" target="_self">_self</a> vai abrir o link na janela ou frame atual(padrao).</li>
+        <li><a href="https://www.youtube.com/" target="_top">_top</a> vai desfazer todos os frames e abrir o destino no navegador completo.</li>
+        <li><a href="https://www.youtube.com/" target="_parent">_parent</a> similar ao uso do _top em uma referencia a janela mae.</li>
+        <li><a href="https://www.youtube.com/" target="youtube">nome-do-frame</a> caso esteja usando frames, indicar o nome da janela a abrir.</li>
+    </ul>
+    <p>podemos tambem usar o atributo REL="" para indica a natureza do destino, esse atributo tambem possui alguns valores, sao eles:</p>
+    <ul type="circle">
+        <li><a href="https://www.instagram.com/" target="_blank" rel="next"> next</a> indica que o link e para proxima parte do documento atual.</li>
+        <li><a href="https://www.instagram.com/" target="_blank" rel="prev"> prev</a> indica que o link e para parte anterior do documento atual.</li>
+        <li><a href="https://www.instagram.com/" target="_blank" rel="author"> author</a> indica que e um link para o site do autor do artigo atual.</li>
+        <li><a href="https://www.instagram.com/" target="_blank" rel="external"> external</a> indica que e um link para outro site que nao faz parte do link atual (site externo).</li>
+    </ul>
+    
+    <p>Voce pode acessar meu <a href="https://gustavoguanabara.github.io" target="_blank" rel="external">repositorio no GitHub</a></p>
+    <hr>
+    <h2>Usando Links Internos</h2>
+    <p>Links internos fazem a ligaçao com outras paginas que estao dentro do mesmo servidor, e para ultiliza-la usamos tambem a tag A. Podemos ultililar tambem o atributo REL="NEXT/PREV" para informar a proxima pagina e a pagina anterior.</p>
+    <p>Esta e a primeira pagina do site. Se voce quiser pode tambem acessar tambem a minha <a href="pag002.html" rel="next"> segunda pagina.</a></p>
+    <br>
+    <p>Voce tambem pode acessar a nossa <a href="Noticias/pag003.html" target="_self" rel="next">Pagina de Noticias</a></p>
+    <hr>
+    <p><a href="downloads.html" target="_blank" rel="next">Paginas de Download</a></p>
+
+</body>
+</html>

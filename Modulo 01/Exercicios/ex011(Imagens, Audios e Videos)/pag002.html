@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reproduzindo Audio</title>
+</head>
+<body>
+    <h1>Vamos aprende a reproduzir audio em HTML.5</h1>
+    <h2>Primeiro metodo</h2>
+    <p>O primeiro metodo e ultilizando a tag &lt;audio&gt; junto com os atributos CONTROLS e AUTOPLAY.</p>
+    <audio src="media/audi-teste.mp3" controls autoplay></audio>
+    <!--COMPATIVEIS COM MP3, WAV, OGG -->
+
+    <h2>Metodo mais compativel</h2>
+    <p>Um metodo mais compativel com outros navegadores e ultilizando a tag &lt;audio&gt; com os atributos PRELOAD, <abbr title="inicia a reproduçao automatica assim que a pagina for carregada">AUTOPLAY</abbr>  e <abbr title="apresenta um player na tela">CONTROLS</abbr> , e abaixo a tag &lt;source&gt; com o atributo TYPE para indicar o formato do audio. </p>
+    <audio preload="metadata" autoplay controls>
+        <source src="media/audio-teste2.mp3" type="audio/mpeg">
+        <source src="media/audio-teste2.mp3" type="audio/ogg">
+        <source src="media/audio-teste2.mp3" type="audio/wav">
+        <p>Infelizmente o seu navegador nao consegue reproduzir esse formato. Clique <a href="media/audio-teste2.mp3">aqui</a> para fazer o download</p>
+    </audio>
+
+        <br>
+        <p>O atributo PRELOAD indica que o audio sera pre-carregado ou nao aceita tres valores:</p>
+        <ul>
+            <li>METADATA: vai carregar apenas as informacoes sobre o arquivo(tamanho, tempo, informaçoes de direitos, etc.)</li>
+            <li>NONE: nao vai carregar absolutamente nada ate que o usuario clique no botao play ou um script inicie a reproducao.</li>
+            <li>AUTO: (padrao)vai carregar o arquivo de audio inteiro assim que a pagina for carregada, mesmo que o usuario numca aperte o play.</li>
+        </ul>
+
+    <hr>
+    <a href="index.html" rel="prev">Voltar para pagina de imagens</a>
+    <br>
+    <a href="pag003.html" rel="next">Pagina de Videos</a>
+</body>
+</html>

@@ -1,0 +1,38 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=RocknRoll+One&family=Work+Sans:wght@300&display=swap');
+    body{
+        font-family: 'RocknRoll One', sans-serif;
+    /*Medidas Absolutas:
+    cm, mm, in(polegada), px, pt, pc
+    
+    Medidas Relativa:
+    em, ex, rem, vw, vh, %
+    16px geralmente = 1em
+    */
+    font-size: 16px;
+    font-weight: bold;
+    /* weight: peso;
+       widht: largura;
+       height: altura;
+       */
+}
+h1{
+    font-size: 38px;
+    font-weight: bold;
+    font-style: italic;
+    /*shorthand font: condensa todas essas tags em uma so
+     ordem:
+     font-style -> font-weight -> font-size -> font-family
+      */
+    background-color: #000000;
+    color: #e8dede;
+}
+h2{
+   font-family: 'RocknRoll One', sans-serif;
+   font: italic bold 2em arial, sans-serif;
+   background-color: #000000;
+   color: #ffffff;
+}
+p{
+    font-family: 'Montserrat', sans-serif;
+   }

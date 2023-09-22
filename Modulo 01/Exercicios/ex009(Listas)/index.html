@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listas</title>
+</head>
+<body>
+    <h1>Trabalhando com listas</h1>
+    <h2>Listas Ordenadas</h2>
+    <p>Para criar  uma lista ordenada vamos usar a tag OL(ordered listis) e para delimitar a lista a tag LI no começo de cada item da lista </p>
+
+    <ol>
+        <li>Acordar</li>
+        <li>Fazer uma ligaçao</li>
+        <li>Tomar cafe</li>
+        <li>Escovar os dentes</li>
+        <li>Estudar</li>
+        <li>Almocar</li>
+        <li>Ir para o trabalho</li>
+        <li>Volta para casa</li>
+        <li>Jantar</li>
+        <li>Dormir</li>
+    </ol>
+    <p>A tag OL possui o parametro TYPE para configurar o tipo de marcador da lista 
+        <ul>
+            <li>type="1" ex. 1, 2, 3, 4</li>
+            <li>type="A" ex. A, B, C, D</li>
+            <li>type="a" ex. a, b, c, d</li>
+            <li>type="I" ex. I, II, III</li>
+            <li>type="i" ex. i, ii, iii</li>
+        </ul>
+    </p>
+    <h2>Listas nao ordenadas</h2>
+    <p>para as listas nao ordenadas trocamos a tag para UL e para delimitar cada item da lista usamos LI tambem </p>
+    <ul>
+        <li>Pao</li>
+        <li>Leite</li>
+        <li>Arroz</li>
+        <li>Feijao</li>
+    </ul>
+    <p>Os parametros TYPE de uma lista nao ordenada sao</p>
+    <ul type="disc">
+        <li>DISC= padro, uma bolinha preta totalmente pintada</li>
+    </ul>
+    <ul type="circle">
+    <li>CIRCLE= Uma bola com a borda preta e sem preenchimento</li>
+    </ul>
+    <ul type="square">
+        <li>SQUARE= Um pequeno quadrado preto totalmente pintado</li>
+    </ul>
+
+    <h2>Lista de Filmes/Series(Exercicio)</h2>
+    <ul type="square">
+        <li>One piece</li>
+        <li>FullMetal Alchemist</li>
+        <li>B99</li>
+        <li>The100</li>
+        <li>Naruto</li>
+    </ul> 
+    <hr>
+
+    <h2>Juntando Lista</h2>
+    <h3>Minhas linguagens favoritas</h3>
+    <ol>
+        <li>Antigas</li>
+        <ol type="a">
+           <li>Clipper</li>
+           <li>Visual Basic</li>
+           <li>Fortran</li>
+           <li>Delphi</li> 
+        </ol>
+        <li>Novas</li>
+        <ol type="a" start="5">
+            <li>PHP</li>
+            <li>Python</li>
+            <li>JavaScript</li>
+            <li>Kotlin</li>
+        </ol>
+    </ol>
+    <h3>Meus jogos favoritos</h3>
+    <ol>
+        <li>Nintendo</li>
+        <ul type="square">
+            <li>Mario Bross</li>
+            <ul type="disc">
+                <li>Mario Bross: 3</li>
+                <li>Mario Levels</li>
+            </ul>
+            <li>Donkey Kong</li>
+            <li>Mortal Kombat</li>
+        </ul>
+        <li>Xbox</li>
+        <ul type="square">
+            <li>NBA2K</li>
+            <li>Fortinite</li>
+            <li>Naruto ST4</li>
+        </ul>
+        <li>PlayStation</li>
+        <ul type="square">
+            <li>Resident Evil</li>
+            <ul type="circle">
+            <li>RE4</li> 
+            <li>RE3</li>
+        </ul>
+            <li>FIFA</li>
+            <ul type="circle">
+                <li>FIFA18</li>
+                <li>FIFA19</li>
+            </ul>
+            <li>Toni Halk</li>
+        </ul>
+    </ol>
+    <hr>
+    <h2>Lista de definiçoes</h2>
+    <p>Usa a tag DT para adiconar um termo e a tag DD para a definicao do termo  e para criar uma lista de definiçao use a tag DL(Definition List)</p>
+    <dl>
+        <dt>HTML</dt>
+        <dd>Linguagem de marcaçao usada para criaçao do conteudo de um site</dd>
+        <dt>CSS</dt>
+        <dd>Linguagem de marcaçao usada para design de um site</dd>
+        <dt>JavaScript</dt>
+        <dd>Linguagem de programaçao usada para dar interatividade de um site</dd>
+    </dl>
+
+    
+</body>
+</html>

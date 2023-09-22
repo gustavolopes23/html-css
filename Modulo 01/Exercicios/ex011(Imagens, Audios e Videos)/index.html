@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias em HTML5</title>
+</head>
+<body>
+    <h1>Midias</h1>
+    <h2>ImagensDinamicas</h2>
+    <p>tente abrir rsse site em varios dispositivos diferentes ou simplesmente aumente o tamanho do seu navegador.</p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="Imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="Imagens/foto-m.png" type="image/png">
+        <img src="Imagens/foto-g.png" alt="Imagen flexivel">
+    </picture>
+
+    <p>Tags usadas</p>
+    <ul>
+        <li><abbr title="concentra varias fonte de imagens(&lt;img&gt;)">&lt;picture&gt;</abbr></li>
+        <li><abbr title="carrega a imagem">&lt;img&gt;</abbr></li>
+        <li><abbr title="indica quando cada imagem deve ser usada">&lt;source&gt;</abbr></li>
+    </ul>
+    <p>a tag SOURCE possui tres atributos
+        <ul>
+            <li>type: vai indicar o media type da imagem que usamos</li>
+            <li>srcset: vai configurar o nome da imagem que sera carregada quando o tamanho indicado for atingido</li>
+            <li>media: indica o tamanho maximo a ser considerado para carregar a imagem indicado no atributo srcset</li>
+        </ul>
+    </p>
+    <hr>
+    <a href="pag002.html" rel="next">Pagina de Audios</a>
+   
+
+
+
+
+    
+    
+</body>
+</html>

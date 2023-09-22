@@ -1,0 +1,57 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'Starborn';
+    src: url('fonts/Starborn.otf') format('opentype'), url('fonts/Starborn.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    /*
+       Tipos de format()
+       - opentype (otf)
+       - truetype (ttf)
+       - embedded-opentype
+       - truetype (Apple Advanced
+       Typography)
+       - svg
+    */
+}
+body{
+    font-family: 'Starborn';
+    background-color: rgb(33, 146, 221);
+
+    
+}
+h1{
+    text-align: center;
+    text-decoration: underline;
+    font-weight: bold;
+    color: rgb(45, 3, 144);
+
+}
+h2{
+    text-decoration: underline;
+    color: rgb(79, 17, 194);
+}
+p{
+    text-align: justify;
+    text-indent: 20px;
+}
+p#id{
+    color: rgb(172, 5, 5);
+    background-color: rgb(27, 129, 197);
+    /*em HTML e id = em CSS e '#'
+      em HTML e class = em CSS e '.'
+    */
+
+    /*
+    id = para usar em um elemento.
+    class = para usar em mais de um elemento.
+*/
+  
+}
+.class{
+    color: rgb(66, 65, 65);
+}
+.destaque{
+    background-color: white;
+}
