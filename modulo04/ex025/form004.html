@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <h1>Exemplo de Formulario</h1>
+    <form action="cadastro.php" method="get">
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            <p>
+                <label for="inome">Nome:</label>
+                <input type="text" name="nome" id="inome" required autocomplete="name" placeholder="Nome">
+            </p>
+            <p>
+                <label for="iemail">E-mail:</label>
+                <input type="email" name="email" id="iemail" autocomplete="email" required placeholder="E-mail">
+            </p>
+            <p>
+                <label for="itel">Telefone:</label>
+                <input type="tel" name="tel" id="itel" autocomplete="tel" max="11" placeholder="Number">
+            </p>
+            <!-- Etudar RegEx -->
+        </fieldset>
+        <fieldset>
+            <legend>Sexo</legend>
+            <input type="radio" name="sexo" id="isxmas" checked><label for="isxmas">Maculino</label>
+            <br>
+            <input type="radio" name="sexo" id="isxfem"><label for="isxfem">Feminino</label>
+        </fieldset>
+        <fieldset>
+            <legend>Esportes Favoritos</legend>
+            <input type="checkbox" name="esfut" id="ifut"><label for="ifut">Futebol</label> 
+            <br>
+            <input type="checkbox" name="esbasq" id="ibasq"><label for="ibasq">Basquete</label> 
+            <br>
+            <input type="checkbox" name="esnat" id="iesnat"><label for="iesnat">Nataçao </label><br>
+            <input type="checkbox" name="esten" id="iesten"><label for="iesten">Tenis</label>
+        </fieldset>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
