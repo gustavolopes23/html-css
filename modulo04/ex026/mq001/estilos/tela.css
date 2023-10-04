@@ -16,8 +16,17 @@ header{
     background-color: lightgray;
 }
 
+menu{
+    background-color: rgb(109, 109, 109);
+    display: flex;
+}
+
 article{
+    background-color: aliceblue;
     width: 600px;
     display: block;
     margin: auto;
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid black;
 }

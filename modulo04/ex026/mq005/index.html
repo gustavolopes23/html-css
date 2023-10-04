@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Queries</title>
+    <link rel="stylesheet" href="estilos/style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Meu Site</h1>
+        <span id="icone" class="material-icons" onclick="clickMenu()">menu</span>
+        <menu id="items">
+            <ul>
+                <li><a href="#">Opçao 1</a></li>
+                <li><a href="#">Opçao 2</a></li>
+                <li><a href="#">Opçao 3</a></li>
+                <li><a href="#">Opçao 4</a></li>
+                <li><a href="#">Opçao 5</a></li>
+                <li><a href="#">Opçao 6</a></li>
+            </ul>
+        </menu>
+    </header>
+    <main>
+        <article>
+            <h2>Testando Média Query</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, similique facere ratione fugiat ab, consequatur iure, odit beatae cumque a quo obcaecati illum necessitatibus temporibus rerum repellendus laborum nemo id. Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum expedita tempore voluptatibus quisquam eos, voluptates iusto quo totam fugit illo. Sint deleniti nulla distinctio consequatur eius fuga porro libero nesciunt!</p>
+            <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur, recusandae? Sed reiciendis, numquam facere exercitationem ab fugiat repellendus placeat voluptates, distinctio quis deleniti! Quibusdam, praesentium consequatur ullam laboriosam asperiores quo. Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita architecto incidunt repellat cupiditate ad fugiat commodi dolorum inventore ut voluptatum sed natus, necessitatibus a ipsa. Ut, deserunt minus? Excepturi, vero.</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe possimus reiciendis quam sint distinctio obcaecati expedita, quia magni maiores? Aliquid ipsam neque aspernatur! Ut ea praesentium sint eius placeat blanditiis. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur labore perspiciatis suscipit numquam id, impedit sapiente ipsum sequi ullam magnam! Repudiandae soluta voluptate delectus officia, ut minus odit neque atque.</p>
+        </article>
+    </main>
+    <script>
+        function clickMenu() {
+            if (items.style.display == 'block') {
+                items.style.display = 'none'
+            } else{
+                items.style.display = 'block'
+            }
+        }
+    </script>
+</body>
+</html>
